@@ -1,0 +1,41 @@
+The gRPC project is changing really fast.
+#References
+https://grpc.io/
+
+https://grpc.io/docs/guides/error/
+https://avi.im/grpc-errors/
+
+https://grpc.io/blog/deadlines/
+
+https://github.com/grpc/grpc-java/blob/master/SECURITY.md
+https://grpc.io/docs/guides/auth/
+
+#HTTP/2.0 vs HTTP/1.0
+https://http2.github.io/
+https://imagekit.io/demo/http2-vs-http1
+
+GRPC vs Rest
+https://husobee.github.io/golang/rest/grpc/2016/05/28/golang-rest-v-grpc.html
+https://www.slideshare.net/borisovalex/grpc-vs-rest-let-the-battle-begin-81800634
+https://docs.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-3.0
+
+intelliJ Setup
+https://www.jetbrains.com/idea/download/
+
+
+Sample google's proto files
+https://github.com/googleapis/googleapis/blob/master/google/pubsub/v1/pubsub.proto
+https://github.com/googleapis/googleapis/blob/master/google/spanner/v1/spanner.proto
+
+Here are some links that will be useful for your to keep up with times:
+
+Join the gRPC community here: https://grpc.io/community/
+
+Find extra awesome resources at this link: https://github.com/grpc-ecosystem/awesome-grpc
+
+If you're looking for additional Java projects and code:
+Great collection of projects: https://github.com/saturnism/grpc-java-by-example
+
+Additional plugins: https://github.com/salesforce/grpc-java-contrib
+
+Read the documentation https://grpc.io/docs/guides/

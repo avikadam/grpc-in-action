@@ -1,0 +1,40 @@
+###How to work with EVANS CLI###
+https://github.com/ktr0731/evans#from-github-releases
+https://dev.to/techschoolguru/grpc-reflection-and-evans-cli-3oia
+
+#Download evans binary - https://github.com/ktr0731/evans/releases
+#Untar binary tar in to evans_cli
+
+##Start using##
+#Go to evans_cli
+
+#Connect to service - ./evans -r repl -p ${port}
+> ~/Downloads/evans_cli$ ./evans -r repl -p 50051
+#Should see
+  ______
+ |  ____|
+ | |__    __   __   __ _   _ __    ___
+ |  __|   \ \ / /  / _. | | '_ \  / __|
+ | |____   \ V /  | (_| | | | | | \__ \
+ |______|   \_/    \__,_| |_| |_| |___/
+
+ more expressive universal gRPC client
+
+#Try to see packages
+blog.BlogService@127.0.0.1:50051> show package
+
+#Go to specific package
+blog.BlogService@127.0.0.1:50051> show package blog
+
+#Find service from package
+blog@127.0.0.1:50051> show service
+
+#Check messages
+blog@127.0.0.1:50051> show message
+
+#Check message details
+blog@127.0.0.1:50051> desc CreateBlogRequest
+
+
+
+

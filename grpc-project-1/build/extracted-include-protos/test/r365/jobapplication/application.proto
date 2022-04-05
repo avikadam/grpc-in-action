@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package job;
+
+option java_package = "com.proto.r365.job.application";
+option java_multiple_files = true;
+
+import "google/protobuf/timestamp.proto";
+import "google/api/annotations.proto";
+
+message JobApplicationRequest {
+  string jobId = 1;
+  Application application = 2;
+}
+
+message Application {
+  Applicant applicant = 1;
+  ApplicationStatus status = 2;
+}
+
+message Applicant {
+  string name = 1;
+  string email = 2;
+  string phone = 3;
+  string years_of_experience = 4;
+  optional string cover_letter = 5;
+  optional string reference = 6;
+  optional string alternatePhone = 7;
+  optional string linkedInUrl = 8;
+  string resumeUrl = 9;
+}
+
+enum ApplicationStatus {
+  SENT = 0;
+  VIEWED = 1;
+  IN_PROCESS = 2;
+  IN_HR_SCREENING = 3;
+  IN_EVALUATION = 4;
+  SELECTED = 5;
+  REJECTED = 6;
+  IN_HR_EVALUATION = 7;
+}
+
+message JobApplicationResponse {
+  string applicationId = 1;
+  ApplicationStatus status = 2;
+}

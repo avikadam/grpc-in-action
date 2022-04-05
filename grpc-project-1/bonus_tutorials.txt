@@ -1,0 +1,90 @@
+Bonus Lecture: Student Special Coupons for my Other courses
+Congrats on completing the course! Here you can find links to all my courses with special discounts included.
+
+Wondering what to take next? Here are my suggestions:
+
+AWS Certified Cloud Practitioner
+
+Kafka for Beginners v2
+
+Keep on learning:
+
+Get emails for new courses and discounts: click here to subscribe!
+Use the coupon MAR_22_GET_STARTED for special discounts on all my courses (included in the links below)
+All my courses:
+
+Data Engineering & API
+Complete Guide to Protocol Buffers 3
+
+gRPC Golang Master Class: Build Modern API & Microservices
+
+gRPC Node.js Master Class: Build Modern API & Microservices
+
+Introduction to Apache NiFi
+
+Apache Kafka Series
+Kafka for Beginners v2
+
+Kafka Connect
+
+Kafka Streams for Data Processing
+
+KSQL Hands On!
+
+Kafka Setup and Administration
+
+Confluent Schema Registry & Kafka REST Proxy
+
+Kafka Security
+
+Kafka Monitoring and Operations
+
+Confluent Certified Developer for Apache Kafka (CCDAK) - Practice Tests
+
+AWS Certifications
+AWS Certified Cloud Practitioner
+
+AWS Certified Cloud Practitioner Practice Exams
+
+AWS Certified Solutions Architect Associate
+
+AWS Certified Solutions Architect Associate Practice Exams
+
+Ultimate AWS Certified Developer Associate
+
+AWS Certified Developer Associate Practice Exams
+
+AWS Certified SysOps Administrator Associate
+
+AWS Certified SysOps Administrator Associate Practice Exams
+
+AWS Certified Solutions Architect Professional
+
+AWS Certified Solutions Architect Professional Practice Exams
+
+AWS Certified DevOps Engineer Professional - Hands On!
+
+AWS Certified DevOps Engineer Professional Practice Exams
+
+AWS Certified Data Analytics Specialty
+
+AWS Certified Data Analytics Specialty Practice Exams
+
+AWS Certified Machine Learning Specialty - Hands On!
+
+AWS Certified Database Specialty
+
+AWS Certified Database Specialty Practice Exams
+
+AWS Certified Advanced Networking Specialty
+
+AWS Certified Advanced Networking Specialty Practice Exams
+
+AWS Master Classes
+AWS CloudFormation MasterClass
+
+AWS EC2 Master Class (with Auto Scaling and Load Balancer)
+
+Amazon EKS Starter: Kubernetes on AWS
+
+Amazon ECS & Fargate Master Class

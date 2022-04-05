@@ -1,0 +1,116 @@
+syntax = "proto3";
+
+package job;
+
+option java_package = "com.proto.r365.job";
+option java_multiple_files = true;
+
+import "google/protobuf/timestamp.proto";
+import "google/api/annotations.proto";
+
+message Job {
+  string id = 1;
+  string title = 3;
+  string description = 4;
+  string postedBy = 7;
+  string hiringManager = 8;
+  Status status = 9;
+  google.protobuf.Timestamp createDate = 10;
+  Department department = 2;
+  MustHaveSkills mustHaveSkills = 5;
+  GoodToHaveSkills goodToHaveSkills = 6;
+}
+
+message MustHaveSkills {
+  PrimarySkills primarySkills = 1;
+  SecondarySkills secondarySkills = 2;
+}
+
+message GoodToHaveSkills {
+  PrimarySkills primarySkills = 1;
+  SecondarySkills secondarySkills = 2;
+}
+
+message PrimarySkills {
+  repeated Skill skill = 1;
+}
+
+message SecondarySkills {
+  repeated Skill skill = 1;
+}
+
+message Skill {
+  string name = 1;
+  string level = 2;
+  string description = 3;
+}
+
+enum Department {
+  HUMAN_RESOURCE = 0;
+  ENGINEERING = 1;
+  SYSTEM = 2;
+  OPERATION = 3;
+  FINANCE = 4;
+}
+
+enum Status {
+  NEW_OPEN = 0;
+  HIRE_CLOSED = 1;
+  EXPIRE_CLOSED = 2;
+  CANCEL_CLOSED = 3;
+  NEW_HOLD = 4;
+}
+
+message CreateJobRequest {
+  Job job = 1;
+}
+
+message CreateJobResponse {
+  Job job = 1;
+}
+
+message UpdateJobRequest {
+  Job job = 1;
+}
+
+message UpdateJobResponse {
+  Job job = 1;
+}
+
+message DepartmentJobRequest {
+  Department department = 1;
+}
+
+message DepartmentJobResponse {
+  Job job = 1;
+}
+
+message SearchJobRequest {
+  optional string title = 1;
+  optional string department = 2;
+  optional Status status = 3;
+}
+
+message SearchJobResponse {
+  repeated Job job = 1;
+}
+
+message JobRequest {
+  string jobId = 1;
+}
+
+message JobResponse {
+  Job job = 1;
+}
+
+service JobService {
+  rpc CreateJob(CreateJobRequest) returns (CreateJobResponse);
+  rpc UpdateJob(UpdateJobRequest) returns (UpdateJobResponse);
+  rpc GetJob(SearchJobRequest) returns (SearchJobResponse);
+  rpc GetDepartmentJobs(DepartmentJobRequest) returns (stream DepartmentJobResponse);
+  rpc FindJob(JobRequest) returns (JobResponse) {
+    option (google.api.http) = {
+      get: "/jobs/{jobId}"
+    };
+  }
+}
